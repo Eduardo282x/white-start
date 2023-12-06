@@ -1,0 +1,24 @@
+.bannerContent{
+    width: 100vw;
+    /* background: green; */
+    height: 36rem;
+    background-image: url('../../assets/Img/Banner-img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 4.5rem;
+    position: relative;
+}
+
+.selects{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 3rem;
+}
+
+p{
+    color: #000;
+}

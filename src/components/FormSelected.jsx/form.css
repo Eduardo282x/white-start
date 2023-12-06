@@ -1,0 +1,24 @@
+.menuItemCustom {
+    margin-left: 2rem !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border: none !important;
+}
+
+.placeHolderIcon {
+    display: flex !important;
+    align-items: center !important;
+    line-height: 10px !important;
+    margin-top: -.35rem;
+}
+
+.iconUbi {
+    /* margin-bottom: -.5rem; */
+}
+
+.formSelectedGroup{
+    display: flex;
+    align-items: center;
+    
+}
