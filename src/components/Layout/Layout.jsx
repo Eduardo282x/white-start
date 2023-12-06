@@ -1,11 +1,11 @@
 import { Header } from '../Header/Header.jsx'
-import { Banner } from '../Banner/Banner.jsx'
-
+import { Home } from '../Home/Home.jsx'
+import './layout.css'
 export const Layout = () => {
     return (
-        <div>
+        <div className='layout'>
             <Header/>
-            <Banner/>
+            <Home/>
         </div>
     )
 }
