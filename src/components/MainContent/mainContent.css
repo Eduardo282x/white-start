@@ -17,16 +17,17 @@ h1{
     height: 25rem;
 }
 
-.cont.displayImage{
+.cont.displayImage,.cont.servi{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
-
+.cont.servi{
+    height: 15rem;
+}
 .img{
     height: 110%;
-    /* border: 2px solid #000; */
     width: 26rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,4 +42,49 @@ h1{
 }
 .img.thirsty{
     background-image: url('../../assets/Img/thirsty.png');
+}
+
+.services{
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+    text-align: center;
+    position: relative;
+
+}
+
+.iconGreen{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: invert(28%) sepia(21%) saturate(1945%) hue-rotate(102deg) brightness(103%) contrast(97%);
+}
+
+.services p{
+    height: 3rem;
+    width: 100%;
+    position: absolute;
+    bottom: -5rem;
+    filter: none;
+}
+
+.iconGreen.serviceIconAc{
+
+}
+.iconGreen.serviceIconSecurity{
+    background-image: url('../../assets/Img/cinturon-de-seguridad.png');
+}
+.iconGreen.serviceIconComodidad{
+    background-image: url('../../assets/Img/asiento.png');
+}
+.iconGreen.serviceIconWifi{
+    background-image: url('../../assets/Img/wifi.png');
+}
+.iconGreen.serviceIconEntreteiment{
+    background-image: url('../../assets/Img/monitor-de-tv.png');
+}
+.iconGreen.serviceIconBathroom{
+    background-image: url('../../assets/Img/bano.png');
 }

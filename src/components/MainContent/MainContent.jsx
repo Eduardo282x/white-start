@@ -14,8 +14,31 @@ export const MainContent = () => {
 
             </div>
             <h1>SERVICIOS A BORDO</h1>
-            <div className="cont">
-
+            <div className="cont servi">
+                <div className="services">
+                    <div className="iconGreen serviceIconAc"></div>
+                    <p>AIRE ACOMDICIONADO</p>
+                </div>
+                <div className="services">
+                    <div className="iconGreen serviceIconSecurity"></div>
+                    <p>CINTORONES DE SEGURIDAD</p>
+                </div>
+                <div className="services">
+                    <div className="iconGreen serviceIconComodidad"></div>
+                    <p>COMODIDAD</p>
+                </div>
+                <div className="services">
+                    <div className="iconGreen serviceIconWifi"></div>
+                    <p>WIFI</p>
+                </div>
+                <div className="services">
+                    <div className="iconGreen serviceIconEntreteiment"></div>
+                    <p>ENTRETENIMIENTO</p>
+                </div>
+                <div className="services">
+                    <div className="iconGreen serviceIconBathroom"></div>
+                    <p>BAÑO</p>
+                </div>
             </div>
             <h1>OTROS SERVICIOS</h1>
             <div className="cont">
