@@ -12,13 +12,48 @@
 
 .selects{
     position: absolute;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: #01441fb0;
+    padding: 1rem 0;
     bottom: 3rem;
 }
 
 p{
     color: #000;
+}
+
+.imgContent{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    gap: 5px;
+}
+
+.img{
+    width: 4.3rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.img.paynet{
+    background-image: url('../../assets/Img/Logo_PayNet_Blanco2.svg');
+}
+.img.paypal{
+    background-image: url('../../assets/Img/Logo_PayPal_Blanco2.svg');
+}
+.img.visa{
+    background-image: url('../../assets/Img/Logo_Visa_Blanco2.svg');
+}
+.img.mastercar{
+    background-image: url('../../assets/Img/Logo_MasterCard_Blanco2.svg');
+}
+.img.coppot{
+    background-image: url('../../assets/Img/Logo_CoopelPay_Blanco.svg');
 }

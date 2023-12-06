@@ -6,6 +6,10 @@
     border: none !important;
 }
 
+.MuiInputLabel-shrink, .MuiSelect-select {
+    margin-top: -.5rem !important;
+}
+
 .placeHolderIcon {
     display: flex !important;
     align-items: center !important;
@@ -13,12 +17,22 @@
     margin-top: -.35rem;
 }
 
-.iconUbi {
-    /* margin-bottom: -.5rem; */
+.iconUbiLeft{
+    /* margin-right: 2rem; */
+}
+
+.iconUbiRight{
+    margin-left: 2rem;
 }
 
 .formSelectedGroup{
     display: flex;
     align-items: center;
     
+}
+
+.MuiPaper-elevation{
+    /* bottom: 5rem !important; */
+    height: 15rem !important;
+    transform: translateY(-5rem) translateX(3rem) !important;
 }
