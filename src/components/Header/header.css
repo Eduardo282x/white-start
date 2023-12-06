@@ -1,0 +1,55 @@
+.headercontent{
+    width: 100vw;
+    height: 6rem;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    display: flex;
+    place-items: center;
+}
+
+.logo{
+    margin-left: 6rem;
+    color: #000;
+    background-image: url('../../assets/Img/logo-estrella-blanca.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18%;
+    height: 60%;
+}
+
+.listOption{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 1rem;
+    padding: 0;
+}
+
+.listOption li{
+    text-decoration: none;
+    word-break: break-word;
+    width: 5.5rem;
+    text-align: center;
+    list-style: none;
+    color: #026937;
+    font-weight: bold;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.listOption li.textLong{
+    width: 9rem;
+    line-height: 1rem;
+    color: red;
+}
+
+.listOption li:hover{
+    color: #000;
+}
+
+.listOption li.textLong:hover{
+    color: #95000a;
+}
