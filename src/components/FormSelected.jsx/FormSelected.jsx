@@ -11,14 +11,21 @@ import LuggageIcon from '@mui/icons-material/Luggage';
 import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
 import { cities } from "./cities";
+import { useNavigate } from "react-router-dom";
 
 export const FormSelected = () => {
+    const navigate = useNavigate();
+
     const [showTextArray, setShowTextArray] = useState([true,true,true,true,true]);
 
     const hiddenText = (index) => {
         const showText = [...showTextArray]
         showText[index] = false;
         setShowTextArray(showText)
+    }
+
+    const redirect = () => {
+        navigate('itinerario')
     }
 
     const arraySelector = [ 
@@ -62,7 +69,7 @@ export const FormSelected = () => {
     return (
         <div className="formSelectedGroup">
             {arraySelector.map((form, index) => (
-                <FormControl key={index} sx={{ m: 1, minWidth: 210, height: 40, borderRadius: 3, background: 'white' }}>
+                <FormControl key={index} sx={{ m: 1, minWidth: 210, maxWidth: 220, height: 40, borderRadius: 3, background: 'white' }}>
                     {form.iconPosition === 'left' ?
                         (showTextArray[index] ? 
                             <InputLabel htmlFor="grouped-select" className="placeHolderIcon">{form.icon} {form.placeholder}</InputLabel> : '')
@@ -95,7 +102,7 @@ export const FormSelected = () => {
                 </FormControl>
             ))}
 
-            <Button component="label" variant="contained" startIcon={<SearchIcon />} sx={{width: 140, height: 40, background: '#046a39'}}>
+            <Button component="label" variant="contained" startIcon={<SearchIcon />} sx={{width: 140, height: 40, background: '#046a39'}} onClick={redirect}>
                 Buscar
             </Button>   
         </div>

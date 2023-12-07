@@ -10,6 +10,7 @@
 
 .logo{
     margin-left: 6rem;
+    cursor: pointer;
     color: #000;
     background-image: url('../../assets/Img/logo-estrella-blanca.svg');
     background-position: center;

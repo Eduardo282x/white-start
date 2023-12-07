@@ -41,12 +41,34 @@ export const MainContent = () => {
                 </div>
             </div>
             <h1>OTROS SERVICIOS</h1>
-            <div className="cont">
-
+            <div className="cont others">
+                <div className="othersCont">
+                    <div className="imgOther othersSustent"></div>
+                    <p className='textGrenn'>Sustentabilidad</p>
+                </div>
+                <div className="othersCont">
+                    <div className="imgOther othersPackage"></div>
+                    <p className='textGrenn'>Paquetería y Mensajeria ENVÍA</p>
+                </div>
+                <div className="othersCont">
+                    <div className="imgOther othersEspecial"></div>
+                    <p className='textGrenn'>Servicios Especiales</p>
+                </div>
             </div>
-            <h1>¿SIN TARJETA? ¡DESCUIDA! RESERVA TUS BOLETOS Y PAGA EN:</h1>
-            <div className="cont">
-
+            <h1 className='shortText'>¿SIN TARJETA? ¡DESCUIDA! RESERVA TUS BOLETOS Y PAGA EN:</h1>
+            <div className="cont cards">
+                <div className="contentCard">
+                    <div className="card bodega"></div>
+                    <div className="card ahorro"></div>
+                    <div className="card sams"></div>
+                    <div className="card walmart"></div>
+                    <div className="card circle"></div>
+                    <div className="card extra"></div>
+                    <div className="card waldos"></div>
+                    <div className="card systienda"></div>
+                    <div className="card super"></div>
+                    <div className="card kisoko"></div>
+                </div>
             </div>
         </div>
     )
