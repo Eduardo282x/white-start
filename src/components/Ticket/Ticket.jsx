@@ -3,7 +3,16 @@ import AccessTimeFilledOutlinedIcon from '@mui/icons-material/AccessTimeFilledOu
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import './Ticket.css'
 
+import { useNavigate } from "react-router-dom";
+
+
 export const Ticket = () => {
+    const navigate = useNavigate();
+
+    const redirectPassenger = () => {
+        navigate('/passengers')
+    }
+
     return (
         <div className='ticket'>
             <div className="childTicket">
@@ -11,7 +20,7 @@ export const Ticket = () => {
                     <div className="imgFSelect"></div>
                     <div className="btnPrice">
                         <div className="price">$590</div>
-                        <div className='elegir'>Elegir</div>
+                        <div className='elegir' onClick={redirectPassenger}>Elegir</div>
                     </div>
                 </div>
                 <div className="travel-ticket">
