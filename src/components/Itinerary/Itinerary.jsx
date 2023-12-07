@@ -17,9 +17,19 @@ export const Itinerary = () => {
                 <h1>Boletos de Huejutla a Mexico Norte</h1>
 
                 <div className="unit">
-                    <AccordionPage/>
+                    <div className="accor">
+                        <AccordionPage/>
+                    </div>
 
                     <div className="ticket">
+                        <div className="orderBy">
+                            <div className="title">Elige Ida</div>
+                            <div className="hourDuration">
+                                <div className="titleDuration">Ordernar por:</div>
+                                <div className="hourOrderBy">Hora</div>
+                                <div className="durationOrderBy">Duración</div>
+                            </div>
+                        </div>
                         <Ticket/>
                         <Ticket/>
                         <Ticket/>

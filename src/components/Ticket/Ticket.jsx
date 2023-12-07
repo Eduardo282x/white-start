@@ -7,8 +7,16 @@ export const Ticket = () => {
     return (
         <div className='ticket'>
             <div className="childTicket">
-                <div className="header-ticket"></div>
-                <div className="travel-ticket"></div>
+                <div className="header-ticket">
+                    <div className="imgFSelect"></div>
+                    <div className="btnPrice">
+                        <div className="price">$590</div>
+                        <div className='elegir'>Elegir</div>
+                    </div>
+                </div>
+                <div className="travel-ticket">
+
+                </div>
                 <div className="info-ticket">
                     <div className="bus">
                         <DirectionsBusIcon/>

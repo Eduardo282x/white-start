@@ -21,6 +21,7 @@ h1{
 }
 
 .information{
+    margin-top: 10rem;
     width: 80%;
     border: 2px solid #000;
 }
@@ -32,8 +33,12 @@ h1{
 .unit{
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+}
+
+.accor{
+    margin-top: 3rem;
 }
 
 .ticket{
@@ -45,4 +50,67 @@ h1{
     gap: 2rem; */
     justify-content: center;
     flex-direction: column;
+}
+
+
+.hourDuration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.titleDuration{
+    font-weight: bold;
+    color: #414141;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+}
+
+.title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #414141;
+}
+
+.orderBy{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    margin-bottom: -1rem;
+}
+
+.hourOrderBy,.durationOrderBy{
+    background-color: #fff;
+    font-size: 18px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: .5rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    border: 1px solid #414141;
+    cursor: pointer;
+    color: #414141;
+}
+
+.hourOrderBy{
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.durationOrderBy{
+    border-radius: 0 .5rem .5rem 0; 
+    background: #414141;
+    color: #fff;
+}
+
+.hourOrderBy:hover{
+    background: #414141;
+    color: #fff;
 }
