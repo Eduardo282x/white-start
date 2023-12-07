@@ -1,0 +1,24 @@
+div{
+    color: #000;
+}
+
+.accordionWidth{
+    width: 20rem;
+    height: 80rem !important;
+    border: 2px solid #000;
+    max-height: 5rem;
+    height: auto;
+}
+.aco{
+    display: none;
+    width: 100% !important;
+}
+.accordionChild{
+    width: 100% !important;
+    transform: translateX(50px) !important;
+    background: red !important;
+}
+
+.mainAccordion{
+    width: 100% !important;
+}

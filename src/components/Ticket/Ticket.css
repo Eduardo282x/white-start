@@ -1,0 +1,126 @@
+.ticket{
+
+}
+
+.childTicket{
+    width: 42rem !important;
+    height: 11rem !important;
+    border: 1px solid #707070;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.footer-ticket{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #414141;
+    /* position: absolute; */
+    height: 20%;
+    /* bottom: 0; */
+    border-radius: 0 0 1rem 1rem;
+}
+
+.header-ticket{
+    width: 100%;
+    height: 30%;
+}
+.travel-ticket{
+    width: 100%;
+    height: 30%;
+    border-top: 1px solid #414141;
+}
+.info-ticket{
+    height: 20%;
+    width: 100%;
+    border-top: 1px solid #414141;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    filter: invert(74%) sepia(1%) saturate(3602%) hue-rotate(33deg) brightness(95%) contrast(61%);
+}
+
+.time::after,.time::before{
+    content: '';
+    display: block;
+    background: #000;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+}
+.time::after{
+    left: 5px;
+}
+.time::before{
+    right: 5px;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    position: relative;
+}
+
+.bus,.avalible{
+    position: relative;
+    width: 20%;
+}
+
+.bus,.local,.duration,.avalible{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.services{
+    /* scale: .8; */
+    width: 2rem;
+    height: 2rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(90deg) brightness(104%) contrast(100%);
+}
+.services.serviceIconSecurity {
+    background-image: url('../../assets/Img/cinturon-de-seguridad.png');
+}
+
+.services.serviceIconAc {
+    background-image: url('../../assets/Img/AC-Icono.png');
+}
+
+.services.serviceIconComodidad {
+    background-image: url('../../assets/Img/asiento.png');
+}
+
+.services.serviceIconWifi {
+    background-image: url('../../assets/Img/wifi.png');
+}
+
+.services.serviceIconEntreteiment {
+    background-image: url('../../assets/Img/monitor-de-tv.png');
+}
+
+.services.serviceIconBathroom {
+    background-image: url('../../assets/Img/bano.png');
+}
+
+.services.serviceIconBathroom.whiteLine::before,
+.services.serviceIconSecurity.whiteLine::before,
+.services.serviceIconComodidad.whiteLine::before,
+.services.serviceIconAc.whiteLine::before,
+.services.serviceIconEntreteiment.whiteLine::before{
+    content: '';
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    right: -15px;
+    display: block;
+    background: #000;
+}
