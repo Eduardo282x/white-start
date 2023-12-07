@@ -11,11 +11,11 @@ import LuggageIcon from '@mui/icons-material/Luggage';
 import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
 import { cities } from "./cities";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const FormSelected = () => {
     const navigate = useNavigate();
-
+    const location = useLocation();
     const [showTextArray, setShowTextArray] = useState([true,true,true,true,true]);
 
     const hiddenText = (index) => {
@@ -25,7 +25,10 @@ export const FormSelected = () => {
     }
 
     const redirect = () => {
-        navigate('itinerario')
+        // console.log(location);
+        if(location.pathname == '/'){
+            navigate('itinerario')
+        }
     }
 
     const arraySelector = [ 
@@ -102,7 +105,18 @@ export const FormSelected = () => {
                 </FormControl>
             ))}
 
-            <Button component="label" variant="contained" startIcon={<SearchIcon />} sx={{width: 140, height: 40, background: '#046a39'}} onClick={redirect}>
+            <Button 
+            component="label" 
+            variant="contained" 
+            startIcon={<SearchIcon />} 
+            sx={{
+                width: 140, 
+                height: 40, 
+                background: '#046a39', 
+                '&:hover': {
+                    background: '#046a39', // Establece el mismo color al pasar el ratón
+                },}} 
+            onClick={redirect}>
                 Buscar
             </Button>   
         </div>

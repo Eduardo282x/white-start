@@ -65,6 +65,7 @@ h1 {
 
 .services {
     width: 8rem;
+    /* border: 2px solid #000; */
     height: 8rem;
     margin: 1rem;
     text-align: center;

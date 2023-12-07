@@ -7,11 +7,11 @@ export const Banner = () => {
             <div className="selects">
                 <FormSelected/>
                 <div className="imgContent">
-                    <div className="img paypal"></div>
-                    <div className="img paynet"></div>
-                    <div className="img visa"></div>
-                    <div className="img mastercar"></div>
-                    <div className="img coppot"></div>
+                    <div className="imgCardForm paypal"></div>
+                    <div className="imgCardForm paynet"></div>
+                    <div className="imgCardForm visa"></div>
+                    <div className="imgCardForm mastercar"></div>
+                    <div className="imgCardForm coppot"></div>
                 </div>
             </div>
         </div>

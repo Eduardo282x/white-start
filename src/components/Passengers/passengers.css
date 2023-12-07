@@ -1,0 +1,30 @@
+.passengerContent{
+    width: 98vw;
+    margin: 0 .5rem;
+    height: auto;
+    /* border: 2px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -7rem;
+}
+
+.passengerChild{
+    margin-top: 10rem;
+    gap: 5rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+}
+
+.firstColum,.secondColum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
