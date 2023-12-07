@@ -1,5 +1,5 @@
 .headercontent{
-    width: 100vw;
+    width: 98.5vw;
     height: 6rem;
     background: #fff;
     position: absolute;
@@ -10,6 +10,7 @@
 
 .logo{
     margin-left: 6rem;
+    cursor: pointer;
     color: #000;
     background-image: url('../../assets/Img/logo-estrella-blanca.svg');
     background-position: center;

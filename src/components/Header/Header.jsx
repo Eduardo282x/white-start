@@ -1,9 +1,16 @@
+import { useNavigate } from 'react-router-dom'
 import './header.css'
 
 export const Header = () => {
+    const navigate = useNavigate();
+
+    const redirectHome = () => {
+        navigate('/')
+    }
+
     return (
         <div className="headercontent">
-            <div className="logo"></div>
+            <div className="logo" onClick={redirectHome}></div>
             <ul className="listOption">
                 <li>Nuestro Grupo</li>
                 <li>Facturación</li>

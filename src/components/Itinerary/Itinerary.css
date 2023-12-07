@@ -1,0 +1,17 @@
+.itineraryCont{
+    width: 98vw;
+    margin: 0 .5rem;
+    height: auto;
+    /* border: 2px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -14rem;
+}
+
+.formSelected{
+    width: 100%;
+    /* border: 2px solid #000; */
+    /* padding: 0 8rem; */
+}

@@ -1,11 +1,12 @@
 import { Header } from '../Header/Header.jsx'
-import { Banner } from '../Banner/Banner.jsx'
+import './layout.css'
+import { Outlet } from 'react-router-dom'
 
 export const Layout = () => {
     return (
-        <div>
+        <div className='layout'>
             <Header/>
-            <Banner/>
+            <Outlet/>
         </div>
     )
 }
