@@ -9,7 +9,7 @@ export const Seating = () => {
     const navigate = useNavigate()
 
     const redirect = (path) => {
-        navigate(path == 'back' ? -1 : '/seating');
+        navigate(path == 'back' ? -1 : '/pay');
     }
 
     const dataTicket = [
@@ -54,6 +54,7 @@ export const Seating = () => {
         <div className='seatingContent'>
             <div className="passengerChild">
                 <div className="firstColum">
+                    <p>Para cambiar de asiento, primero debe hacer click sobre cualquiera de los asientos seleccionados, y posteriormente sleccione su nuevo asiento.</p>
                     <CardSeating/>
                 </div>
                 <div className="secondColum">
@@ -64,7 +65,7 @@ export const Seating = () => {
 
             <div className="btnDisplay">
                 <Button variant="contained" size="large" className='btnGreen' onClick={() => redirect('back')}>Regresar</Button>
-                <Button variant="contained" size="large" className='btnGreen' onClick={() => redirect('continue')}>Seleccionar asientos</Button>
+                <Button variant="contained" size="large" className='btnGreen' onClick={() => redirect('continue')}>Continuar</Button>
             </div>
         </div>
     )

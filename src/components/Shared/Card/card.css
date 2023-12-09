@@ -63,14 +63,19 @@
     height: auto;
 }
 
-.other{
+.middle{
         width: 48%;
-        height: 5.1rem;
-        /* border: 2px solid #000; */
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
+}
+.fullWidth{
+    width: 99%;
+}
+
+.fullWidth, .middle{
+    height: 5.1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .messageSecundary{

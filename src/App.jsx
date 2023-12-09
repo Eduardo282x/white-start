@@ -5,6 +5,7 @@ import { Home } from "./components/Home/Home";
 import { Itinerary } from "./components/Itinerary/Itinerary";
 import { Passengers } from "./components/Passengers/Passengers";
 import { Seating } from "./components/Seating/Seating";
+import { Pay } from "./components/Pay/Pay";
 
 function App() {
   const router = createBrowserRouter([
@@ -26,6 +27,10 @@ function App() {
         {
           path: "/seating",
           element: <Seating />,
+        },
+        {
+          path: "/pay",
+          element: <Pay />,
         },
       ],
     },

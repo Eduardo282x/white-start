@@ -1,4 +1,4 @@
-.passengerContent{
+.payContent{
     width: 98vw;
     margin: 0 .5rem;
     height: auto;
@@ -10,7 +10,7 @@
     margin-top: -7rem;
 }
 
-.passengerChild{
+.payChild{
     margin-top: 15rem;
     gap: 1rem;
     width: 80%;

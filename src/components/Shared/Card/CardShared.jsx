@@ -38,7 +38,7 @@ export const CardShared = ({width, height, title, subtitle, formActive, dataForm
                 <div className='inputContent'>
                     {formActive && dataForm
                         ? dataForm.map((formData, key) => (
-                                <div key={key} className='other'>
+                                <div key={key} className={formData.width}>
                                     <p>
                                         {formData.label} {formData.required ? '*' : ''}
                                     </p>

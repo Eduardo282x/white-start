@@ -11,25 +11,29 @@ export const Passengers = () => {
             label: 'Nombre',
             required: true,
             inputType: 'text',
-            placeholder: 'Nombre'
+            placeholder: 'Nombre',
+            width: 'middle'
         },
         {
             label: 'Apellido(s)',
             required: true,
             inputType: 'text',
-            placeholder: 'Apellido'
+            placeholder: 'Apellido',
+            width: 'middle'
         },
         {
             label: 'Correo Electronico',
             required: true,
             inputType: 'email',
-            placeholder: 'correo@example.com'
+            placeholder: 'correo@example.com',
+            width: 'middle'
         },
         {
             label: 'Télefono',
             required: true,
             inputType: 'tel',
-            placeholder: 'XXX XXX XXXX'
+            placeholder: 'XXX XXX XXXX',
+            width: 'middle'
         },
     ]
 
@@ -38,20 +42,23 @@ export const Passengers = () => {
             label: 'Nombre',
             required: true,
             inputType: 'text',
-            placeholder: 'Nombre'
+            placeholder: 'Nombre',
+            width: 'middle'
         },
         {
             label: 'Apellido',
             required: true,
             inputType: 'text',
-            placeholder: 'Apellido'
+            placeholder: 'Apellido',
+            width: 'middle'
         },
         {
             label: 'Tipo de boleto',
             readOnly: true,
             inputType: 'email',
             placeholder: 'Tipo de boleto',
-            defaultValue: 'Adulto $590'
+            defaultValue: 'Adulto $590',
+            width: 'middle'
         },
     ]
 

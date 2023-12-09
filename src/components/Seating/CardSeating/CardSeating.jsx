@@ -48,7 +48,7 @@ export const CardSeating = () => {
                 {seatInformationMessage.map((seat) => (
                     <div className="seatInfo" key={seat.label}>
                         <div className={seat.color}></div>
-                        {seat.label}
+                        <p>{seat.label}</p>
                     </div>
                 ))}
             </div>
