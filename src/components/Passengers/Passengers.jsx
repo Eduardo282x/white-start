@@ -6,12 +6,12 @@ export const Passengers = () => {
         <div className='passengerContent'>
             <div className="passengerChild">
                 <div className="firstColum">
-                    <CardShared width={675} height={275}/>
-                    <CardShared width={675} height={275}/>
+                    <CardShared width={633} height={256}/>
+                    <CardShared width={633} height={392}/>
                 </div>
                 <div className="secondColum">
-                    <CardShared width={375} height={475}/>
-                    <CardShared width={375} height={275}/>
+                    <CardShared width={443} height={344}/>
+                    <CardShared width={443} height={300}/>
                 </div>
             </div>
         </div>

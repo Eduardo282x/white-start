@@ -11,9 +11,9 @@
 }
 
 .passengerChild{
-    margin-top: 10rem;
-    gap: 5rem;
-    width: 60%;
+    margin-top: 15rem;
+    gap: 1rem;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
