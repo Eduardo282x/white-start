@@ -1,12 +1,13 @@
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
 import AccessTimeFilledOutlinedIcon from '@mui/icons-material/AccessTimeFilledOutlined';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PropTypes from "prop-types";
 import './Ticket.css'
 
 import { useNavigate } from "react-router-dom";
 
 
-export const Ticket = () => {
+export const Ticket = ({price}) => {
     const navigate = useNavigate();
 
     const redirectPassenger = () => {
@@ -19,7 +20,7 @@ export const Ticket = () => {
                 <div className="header-ticket">
                     <div className="imgFSelect"></div>
                     <div className="btnPrice">
-                        <div className="price">$590</div>
+                        <div className="price">${price}</div>
                         <div className='elegir' onClick={redirectPassenger}>Elegir</div>
                     </div>
                 </div>
@@ -58,3 +59,9 @@ export const Ticket = () => {
         </div>
     )
 }
+
+
+
+Ticket.propTypes = {
+    price: PropTypes.number,
+};

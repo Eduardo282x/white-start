@@ -81,7 +81,7 @@ h1{
 .orderBy{
     display: flex;
     justify-content: space-between;
-    width: 95%;
+    width: 85%;
     align-items: center;
     margin-bottom: -1rem;
 }

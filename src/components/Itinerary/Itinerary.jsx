@@ -2,7 +2,24 @@ import { FormSelected } from "../FormSelected.jsx/FormSelected";
 import { AccordionPage } from "../Accordion/AccordionPage";
 import { Ticket } from "../Ticket/Ticket";
 import './Itinerary.css'
+import { useState, useEffect } from "react";
+
 export const Itinerary = () => {
+
+    const [numberRandom, setNumberRandom] = useState([]);
+
+    useEffect(() => {
+        const randomNumberGeneration = () => {
+            const randomNumbers = Array.from({ length: 4 }, () => {
+                return Math.floor(Math.random() * (1500 - 200 + 1)) + 200;
+            });
+    
+            setNumberRandom(randomNumbers);
+        };
+
+        randomNumberGeneration();
+    }, []);
+
     return (
         <div className="itineraryCont">
             <div className="formSelected">
@@ -30,14 +47,14 @@ export const Itinerary = () => {
                                 <div className="durationOrderBy">Duración</div>
                             </div>
                         </div>
-                        <Ticket/>
-                        <Ticket/>
-                        <Ticket/>
-                        <Ticket/>
+
+
+                        {numberRandom.map((number, index) => (
+                            <Ticket key={index} price={number}/>
+                        ))}
                     </div>
                 </div>
             </div>
-            {/* <Header/> */}
         </div>
     )
 }

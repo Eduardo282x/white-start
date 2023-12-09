@@ -1,8 +1,11 @@
 import './passengers.css'
 import { CardShared } from '../Shared/Card/CardShared'
-
+import Button from '@mui/material/Button';
+import { useNavigate } from 'react-router-dom';
 
 export const Passengers = () => {
+    const navigate = useNavigate()
+
     const dataFormOne = [
         {
             label: 'Nombre',
@@ -88,6 +91,11 @@ export const Passengers = () => {
         return data;
     };
 
+    const redirect = (path) => {
+        navigate(path == 'back' ? -1 : '/seating');
+    }
+
+
     calculateTotal(dataTicket)
 
     return (
@@ -101,6 +109,11 @@ export const Passengers = () => {
                     <CardShared width={443} height={344} title={"Itinerario ida:"} footer={`Primera Select Local`}/>
                     <CardShared width={443} height={300} title={"Detalles del pago"} paragraphMessage={'1 pasajeros'} ticket={true} dataTicket={dataTicket}/>
                 </div>
+            </div>
+
+            <div className="btnDisplay">
+                <Button variant="contained" size="large" className='btnGreen' onClick={() => redirect('back')}>Regresar</Button>
+                <Button variant="contained" size="large" className='btnGreen' onClick={() => redirect('continue')}>Seleccionar asientos</Button>
             </div>
         </div>
     )
