@@ -1,4 +1,5 @@
 import './mainContent.css'
+import { CarouselComponent } from './Carousel/CarouselComponent'
 
 export const MainContent = () => {
     return (
@@ -10,8 +11,8 @@ export const MainContent = () => {
                 <div className="img thirsty"></div>
             </div>
             <h1>DESCUBRE Y DISFRUTA</h1>
-            <div className="cont">
-
+            <div className="cont carousel">
+                <CarouselComponent/>
             </div>
             <h1>SERVICIOS A BORDO</h1>
             <div className="cont servi">

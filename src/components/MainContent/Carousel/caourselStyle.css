@@ -1,0 +1,25 @@
+.carousel-container {
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.carousel .control-prev,.carousel .control-next {
+    width: 2rem !important;
+    scale: 2;
+    color: #fff !important;
+    margin: 0 1rem;
+}
+
+
+div img {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    filter: none;
+    background: none;
+}

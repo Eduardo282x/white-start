@@ -17,6 +17,10 @@ h1 {
     height: 25rem;
 }
 
+.cont.carousel{
+    /* border: 2px solid #000; */
+}
+
 .cont.displayImage,
 .cont.servi {
     display: flex;
@@ -87,7 +91,6 @@ h1 {
     width: 100%;
     position: absolute;
     bottom: -5rem;
-    /* filter: none; */
     color: #000;
 }
 

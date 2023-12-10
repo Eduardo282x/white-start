@@ -114,6 +114,94 @@ export const Pay = () => {
         },
     ]
 
+    const dataFormTwo = [
+        {
+            label: 'Número de la tarjeta',
+            required: true,
+            inputType: 'text',
+            placeholder: 'Número de la tarjeta',
+            width: 'fullWidth'
+        },
+        {
+            label: 'Fecha de vencimiento',
+            required: true,
+            inputType: 'text',
+            placeholder: 'Fecha de vencimiento',
+            width: 'middle'
+        },
+        {
+            label: 'CSC',
+            required: true,
+            inputType: 'text',
+            placeholder: 'CSC',
+            width: 'middle'
+        },
+        {
+            label: 'Nombre',
+            required: true,
+            inputType: 'text',
+            placeholder: 'Nombre',
+            width: 'middle'
+        },
+        {
+            label: 'Apellidos',
+            required: true,
+            inputType: 'text',
+            placeholder: 'Apellidos',
+            width: 'middle'
+        },
+        {
+            label: 'Dirección',
+            required: true,
+            inputType: 'text',
+            placeholder: 'Calle, Número',
+            width: 'fullWidth'
+        },
+        {
+            label: 'Colonia',
+            required: true,
+            inputType: 'text',
+            placeholder: 'Colonia',
+            width: 'fullWidth'
+        },
+        {
+            label: 'Ciudad',
+            required: true,
+            inputType: 'text',
+            placeholder: 'Ciudad',
+            width: 'fullWidth'
+        },
+        {
+            label: 'Estado',
+            required: true,
+            inputType: 'text',
+            placeholder: 'Estado',
+            width: 'fullWidth'
+        },
+        {
+            label: 'Código Postal',
+            required: true,
+            inputType: 'text',
+            placeholder: 'Código Postal',
+            width: 'fullWidth'
+        },
+        {
+            label: 'Celular',
+            required: true,
+            inputType: 'text',
+            placeholder: '+52',
+            defaultValue: '+52',
+            width: 'fullWidth'
+        },
+        {
+            label: 'Correo electrónico',
+            required: true,
+            inputType: 'text',
+            placeholder: 'Correo electrónico',
+            width: 'fullWidth'
+        },
+    ]
+
     calculateTotal(dataTicket)
 
     return (
@@ -125,7 +213,7 @@ export const Pay = () => {
                 <div className="firstColum">
                     <CardShared width={633} height={570} title={"Datos del cliente"} formActive={true} dataForm={dataFormOne}/>
                     <CardShared width={633} height={156} title={"Pasajedos ida"} subtitle={'PASAJERO 1     ADULTO       Asiento: 31'}/>
-                    <CardShared width={633} height={401} title={"Selecciona método de pago"}/>
+                    <CardShared width={633} height={1100} title={"Datos del pago"} formActive={true} dataForm={dataFormTwo}/>
                 </div>
                 <div className="secondColum">
                     <CardShared width={348} height={392} title={"Itinerario ida:"} footer={`Primera Select Local`}/>
