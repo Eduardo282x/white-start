@@ -14,13 +14,16 @@
 
 .available,.availableInfo{
     transition: .2s;
+    color: #000 !important;
     filter: invert(86%) sepia(39%) saturate(5666%) hue-rotate(96deg) brightness(103%) contrast(104%);
 }
 
 .selected,.selectedInfo{
+    color: #000 !important;
     filter: invert(31%) sepia(17%) saturate(2353%) hue-rotate(102deg) brightness(94%) contrast(97%);
 }
 .reserve,.reserveInfo{
+    color: #000 !important;
     filter: invert(95%) sepia(64%) saturate(4061%) hue-rotate(335deg) brightness(92%) contrast(85%);
 } 
 .available .background,.selected .background,.reserve .background {
@@ -34,6 +37,7 @@
     background-repeat: no-repeat;
     background-position: center;
     transform: rotate(90deg);
+    
 }
 
 .available:hover{

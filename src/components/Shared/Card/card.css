@@ -124,6 +124,7 @@
 }
 
 .dataTicketFocus{
+    font-weight: bold;
     background: red;
 }
 
