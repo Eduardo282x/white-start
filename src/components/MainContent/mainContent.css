@@ -87,7 +87,8 @@ h1 {
     width: 100%;
     position: absolute;
     bottom: -5rem;
-    filter: none;
+    /* filter: none; */
+    color: #000;
 }
 
 .iconGreen.serviceIconAc {

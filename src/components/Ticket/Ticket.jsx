@@ -1,12 +1,13 @@
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
 import AccessTimeFilledOutlinedIcon from '@mui/icons-material/AccessTimeFilledOutlined';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PropTypes from "prop-types";
 import './Ticket.css'
 
 import { useNavigate } from "react-router-dom";
 
 
-export const Ticket = () => {
+export const Ticket = ({price}) => {
     const navigate = useNavigate();
 
     const redirectPassenger = () => {
@@ -19,7 +20,7 @@ export const Ticket = () => {
                 <div className="header-ticket">
                     <div className="imgFSelect"></div>
                     <div className="btnPrice">
-                        <div className="price">$590</div>
+                        <div className="price">${price}</div>
                         <div className='elegir' onClick={redirectPassenger}>Elegir</div>
                     </div>
                 </div>
@@ -47,14 +48,20 @@ export const Ticket = () => {
                     <div className="avalible">Disponible 25</div>
                 </div>
                 <div className="footer-ticket">
-                    <div className="services serviceIconSecurity whiteLine"></div>
-                    <div className="services serviceIconBathroom whiteLine"></div>
-                    <div className="services serviceIconComodidad whiteLine"></div>
-                    <div className="services serviceIconAc whiteLine"></div>
-                    <div className="services serviceIconEntreteiment whiteLine"></div>
-                    <div className="services serviceIconWifi"></div>
+                    <div className="servicesTicket serviceIconSecurity whiteLine"></div>
+                    <div className="servicesTicket serviceIconBathroom whiteLine"></div>
+                    <div className="servicesTicket serviceIconComodidad whiteLine"></div>
+                    <div className="servicesTicket serviceIconAc whiteLine"></div>
+                    <div className="servicesTicket serviceIconEntreteiment whiteLine"></div>
+                    <div className="servicesTicket serviceIconWifi"></div>
                 </div>
             </div>
         </div>
     )
 }
+
+
+
+Ticket.propTypes = {
+    price: PropTypes.number,
+};

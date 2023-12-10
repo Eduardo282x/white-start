@@ -95,49 +95,50 @@
 }
 
 
-.services{
-    /* scale: .8; */
+.servicesTicket{
+    scale: .8;
     width: 2rem;
     height: 2rem;
+    margin-left: .5rem;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(90deg) brightness(104%) contrast(100%);
 }
-.services.serviceIconSecurity {
+.servicesTicket.serviceIconSecurity {
     background-image: url('../../assets/Img/cinturon-de-seguridad.png');
 }
 
-.services.serviceIconAc {
+.servicesTicket.serviceIconAc {
     background-image: url('../../assets/Img/AC-Icono.png');
 }
 
-.services.serviceIconComodidad {
+.servicesTicket.serviceIconComodidad {
     background-image: url('../../assets/Img/asiento.png');
 }
 
-.services.serviceIconWifi {
+.servicesTicket.serviceIconWifi {
     background-image: url('../../assets/Img/wifi.png');
 }
 
-.services.serviceIconEntreteiment {
+.servicesTicket.serviceIconEntreteiment {
     background-image: url('../../assets/Img/monitor-de-tv.png');
 }
 
-.services.serviceIconBathroom {
+.servicesTicket.serviceIconBathroom {
     background-image: url('../../assets/Img/bano.png');
 }
 
-.services.serviceIconBathroom.whiteLine::before,
-.services.serviceIconSecurity.whiteLine::before,
-.services.serviceIconComodidad.whiteLine::before,
-.services.serviceIconAc.whiteLine::before,
-.services.serviceIconEntreteiment.whiteLine::before{
+.servicesTicket.serviceIconBathroom.whiteLine::before,
+.servicesTicket.serviceIconSecurity.whiteLine::before,
+.servicesTicket.serviceIconComodidad.whiteLine::before,
+.servicesTicket.serviceIconAc.whiteLine::before,
+.servicesTicket.serviceIconEntreteiment.whiteLine::before{
     content: '';
     height: 100%;
     width: 2px;
     position: absolute;
-    right: -15px;
+    right: -10px;
     display: block;
     background: #000;
 }
