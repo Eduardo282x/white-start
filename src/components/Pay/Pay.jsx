@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import './pay.css'
 import { CardShared } from '../Shared/Card/CardShared';
+import { StepperIcons } from '../Shared/StepperIcons/StepperIcons';
 import Button from '@mui/material/Button';
 
 export const Pay = () => {
@@ -117,9 +118,12 @@ export const Pay = () => {
 
     return (
         <div className='payContent'>
+
+            <StepperIcons labelSelected={'Pago'}/>
+
             <div className="payChild">
                 <div className="firstColum">
-                    <CardShared width={633} height={542} title={"Datos del cliente"} formActive={true} dataForm={dataFormOne}/>
+                    <CardShared width={633} height={570} title={"Datos del cliente"} formActive={true} dataForm={dataFormOne}/>
                     <CardShared width={633} height={156} title={"Pasajedos ida"} subtitle={'PASAJERO 1     ADULTO       Asiento: 31'}/>
                     <CardShared width={633} height={401} title={"Selecciona método de pago"}/>
                 </div>

@@ -1,8 +1,8 @@
 import { FormSelected } from "../FormSelected.jsx/FormSelected";
-import { AccordionPage } from "../Accordion/AccordionPage";
 import { Ticket } from "../Ticket/Ticket";
 import './Itinerary.css'
 import { useState, useEffect } from "react";
+import { StepperIcons } from "../Shared/StepperIcons/StepperIcons";
 
 export const Itinerary = () => {
 
@@ -26,18 +26,12 @@ export const Itinerary = () => {
                 <FormSelected/>
             </div>
 
-            <div className="step">
-                
-            </div>
+            <StepperIcons labelSelected={'Itinerario'}/>
 
             <div className="information">                
                 <h1>Boletos de Huejutla a Mexico Norte</h1>
 
                 <div className="unit">
-                    <div className="accor">
-                        <AccordionPage/>
-                    </div>
-
                     <div className="ticket">
                         <div className="orderBy">
                             <div className="title">Elige Ida</div>
@@ -47,8 +41,6 @@ export const Itinerary = () => {
                                 <div className="durationOrderBy">Duración</div>
                             </div>
                         </div>
-
-
                         {numberRandom.map((number, index) => (
                             <Ticket key={index} price={number}/>
                         ))}

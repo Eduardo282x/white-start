@@ -6,6 +6,7 @@ import './card.css'
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
+import HikingIcon from '@mui/icons-material/Hiking';
 
 export const CardShared = ({width, height, title, subtitle, formActive, dataForm, messageSecundary,paragraphMessage,footer,ticket,dataTicket}) => {
     const [errors, setErrors] = useState({});
@@ -30,7 +31,7 @@ export const CardShared = ({width, height, title, subtitle, formActive, dataForm
 
                 {paragraphMessage ? 
                 <div className="paragraphMessage">
-                <p>{paragraphMessage}</p> 
+                <p> <HikingIcon/> {paragraphMessage}</p> 
                 </div>
                 : ''
                 }
@@ -49,7 +50,7 @@ export const CardShared = ({width, height, title, subtitle, formActive, dataForm
                                         placeholder={formData.placeholder}
                                         defaultValue={formData.defaultValue}
                                         className={errors[formData.label] ? 'errorInput' : 'inputForm'}
-                                        onClick={(event) => inputEmpty(event, formData.label)}
+                                        onBlur={(event) => inputEmpty(event, formData.label)}
                                         onChange={(event) => inputEmpty(event, formData.label)}
                                         InputProps={{
                                             readOnly: formData.readOnly,

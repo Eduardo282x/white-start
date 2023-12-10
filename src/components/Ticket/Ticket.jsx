@@ -48,12 +48,12 @@ export const Ticket = ({price}) => {
                     <div className="avalible">Disponible 25</div>
                 </div>
                 <div className="footer-ticket">
-                    <div className="services serviceIconSecurity whiteLine"></div>
-                    <div className="services serviceIconBathroom whiteLine"></div>
-                    <div className="services serviceIconComodidad whiteLine"></div>
-                    <div className="services serviceIconAc whiteLine"></div>
-                    <div className="services serviceIconEntreteiment whiteLine"></div>
-                    <div className="services serviceIconWifi"></div>
+                    <div className="servicesTicket serviceIconSecurity whiteLine"></div>
+                    <div className="servicesTicket serviceIconBathroom whiteLine"></div>
+                    <div className="servicesTicket serviceIconComodidad whiteLine"></div>
+                    <div className="servicesTicket serviceIconAc whiteLine"></div>
+                    <div className="servicesTicket serviceIconEntreteiment whiteLine"></div>
+                    <div className="servicesTicket serviceIconWifi"></div>
                 </div>
             </div>
         </div>

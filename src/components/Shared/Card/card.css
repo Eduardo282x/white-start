@@ -27,7 +27,7 @@
     color: #046a39;
     width: 100%;
     text-align: left;
-    padding-left: 1rem;
+    padding-top: .5rem;
 }
 
 .inputForm,.errorInput{
@@ -46,7 +46,7 @@
 }
 
 .messageError{
-    color: red;
+    color: red !important;
     margin-top: 0rem;
     font-size: 12px;
     padding-left: .5rem;
@@ -90,7 +90,12 @@
 }
 
 .paragraphMessage{
-    margin-top: -.8rem;
+    /* margin-top: -.8rem; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 2.5rem;
+    margin-bottom: -.5rem;
 }
 
 .paragraphMessage::before{
@@ -102,6 +107,9 @@
 }
 
 .footerMessage{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     position: absolute;
     bottom: 1rem;
 }

@@ -7,11 +7,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: -7rem;
+    margin-top: 7rem;
 }
 
 .payChild{
-    margin-top: 15rem;
+    margin-top: 2rem;
     gap: 1rem;
     width: 80%;
     display: flex;

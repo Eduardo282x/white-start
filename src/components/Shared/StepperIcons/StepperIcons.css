@@ -1,0 +1,51 @@
+.stepperContent {
+    width: 40%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+
+.circleIcon::after,
+.circleSelected::after {
+    content: '';
+    display: block;
+    width: 5.2rem; 
+    height: 2px; 
+    background-color: #000; 
+    right: -3.7rem;
+    bottom: 70%;
+    position: absolute;
+}
+
+.circleIcon:last-child::after,
+.circleSelected:last-child::after {
+    display: none; 
+}
+
+.circleIcon,
+.circleSelected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    height: 8rem;
+    width: 6em;
+    position: relative;
+}
+
+.iconDecoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.circleSelected {
+    filter: invert(22%) sepia(68%) saturate(2166%) hue-rotate(136deg) brightness(89%) contrast(101%);
+}

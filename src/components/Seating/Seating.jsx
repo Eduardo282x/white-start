@@ -2,6 +2,7 @@ import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 import { CardShared } from '../Shared/Card/CardShared';
 import { CardSeating } from './CardSeating/CardSeating';
+import { StepperIcons } from '../Shared/StepperIcons/StepperIcons';
 import './seating.css'
 
 
@@ -52,6 +53,9 @@ export const Seating = () => {
 
     return (
         <div className='seatingContent'>
+
+            <StepperIcons labelSelected={'Asientos'}/>
+
             <div className="passengerChild">
                 <div className="firstColum">
                     <p>Para cambiar de asiento, primero debe hacer click sobre cualquiera de los asientos seleccionados, y posteriormente sleccione su nuevo asiento.</p>

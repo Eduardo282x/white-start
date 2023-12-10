@@ -2,6 +2,7 @@ import './passengers.css'
 import { CardShared } from '../Shared/Card/CardShared'
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
+import { StepperIcons } from '../Shared/StepperIcons/StepperIcons';
 
 export const Passengers = () => {
     const navigate = useNavigate()
@@ -107,6 +108,9 @@ export const Passengers = () => {
 
     return (
         <div className='passengerContent'>
+
+            <StepperIcons labelSelected={'Pasajeros'}/>
+            
             <div className="passengerChild">
                 <div className="firstColum">
                     <CardShared width={633} height={256} title={"Datos del cliente"} formActive={true} dataForm={dataFormOne}/>
